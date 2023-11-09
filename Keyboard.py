@@ -1,0 +1,56 @@
+# Made by S级魔人
+# During 2021/11/17 20:17
+import pyautogui
+
+from KeyType import Key
+from pynput import keyboard, mouse
+Keyboard = keyboard.Controller()
+Mouse = mouse.Controller()
+
+# 用一个list来承接所有的KeyType
+Q=Key(141,207,228,306,'q')
+W=Key(227,203,311,306,'w')
+E=Key(307,202,394,303,'e')
+R=Key(395,204,483,305,'r')
+T=Key(476,203,563,306,'t')
+Y=Key(563,199,652,307,'y')
+U=Key(646,197,732,303,'u')
+I=Key(729,199,819,308,'i')
+O=Key(811,195,900,304,'o')
+P=Key(897,195,988,305,'p')
+A=Key(168,342,251,442,'a')
+S=Key(250,340,339,443,'s')
+D=Key(334,335,422,443,'d')
+F=Key(417,337,505,444,'f')
+G=Key(503,333,591,445,'g')
+H=Key(586,330,672,445,'h')
+J=Key(672,331,761,441,'j')
+K=Key(755,331,845,443,'k')
+L=Key(841,332,929,443,'l')
+M = Key(732,468,812,580,'m')
+N = Key(654,468,726,580,'n')
+B = Key(566,470,642,581,'b')
+V = Key(480,470,557,581,'v')
+C = Key(400,470,471,580,'c')
+X = Key(316,472,386,580,'x')
+Z = Key(214,472,305,581,'z')
+one=Key(107,70,180,178,'1')
+two=Key(171,65,259,174,'2')
+three=Key(259,69,346,171,'3')
+four=Key(342,64,430,176,'4')
+five=Key(424,65,512,170,'5')
+six=Key(510,68,596,173,'6')
+seven=Key(594,61,685,175,'7')
+eight=Key(678,61,766,172,'8')
+nine=Key(764,60,851,172,'9')
+zero=Key(847,59,937,168,'0')
+BACK=Key(933,59,1090,171,keyboard.Key.backspace)
+BLANKSPACE=Key(455,605,860,712,keyboard.Key.space)
+Chap = Key(9,345 ,171 ,443 ,keyboard.Key.caps_lock)
+Shift = Key(92,478,220,581,keyboard.Key.shift_l)
+Alt = Key(293,606,378,713,keyboard.Key.alt_l)
+Ctrl = Key(9, 592, 214, 711, keyboard.Key.cmd_l)
+Comma = Key(808,467,898,580,',')
+Full_stop = Key(892,471,985,581,'.')
+
+AllKey = [Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M,one,two,three,four,five,six,seven,eight,nine,zero, Comma, Full_stop, BACK]
